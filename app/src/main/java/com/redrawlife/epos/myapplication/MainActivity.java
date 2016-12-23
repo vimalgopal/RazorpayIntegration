@@ -23,6 +23,20 @@ public class MainActivity extends AppCompatActivity implements PaymentResultList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    public void selfDestruct1(View view) {
+        startPayment(5000);
+    }
+    public void selfDestruct2(View view) {
+        startPayment(10000);
+    }
+
+    public void selfDestruct3(View view) {
+        startPayment(15000);
+    }
+
+    public void selfDestruct4(View view) {
+        startPayment(20000);
+    }
 
     public void makepayment(View view) {
         EditText newEditView = (EditText)findViewById(R.id.editText);
