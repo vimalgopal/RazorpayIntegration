@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.razorpay.Checkout;
@@ -13,29 +14,22 @@ import com.razorpay.PaymentResultListener;
 
 import org.json.JSONObject;
 
+
 public class MainActivity extends AppCompatActivity implements PaymentResultListener {
     private static final String TAG = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
+    public void makepayment(View view) {
+        EditText newEditView = (EditText)findViewById(R.id.editText);
+        String val = newEditView.getText().toString();
+        int value = Integer.valueOf(val)*100;
 
-
-    public void selfDestruct1(View view) {
-        startPayment(5000);
-    }
-    public void selfDestruct2(View view) {
-        startPayment(10000);
-    }
-
-    public void selfDestruct3(View view) {
-        startPayment(15000);
-    }
-
-    public void selfDestruct4(View view) {
-        startPayment(20000);
+        startPayment(value);
     }
 
 

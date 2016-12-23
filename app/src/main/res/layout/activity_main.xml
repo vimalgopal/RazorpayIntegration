@@ -10,47 +10,34 @@
     android:orientation="vertical"
     tools:context="com.redrawlife.epos.myapplication.MainActivity">
 
+    <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Enter Amount in Rs"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_gravity="center_horizontal" />
 
     <Button
-        android:id="@+id/fifty"
+        android:id="@+id/payment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="50"
-        android:layout_weight="1"
+        android:text="MAKE PAYMENT"
         android:layout_margin="16dp"
-        android:onClick="selfDestruct1"
+        android:onClick="makepayment"
         android:textColor="#FFFFFF"
         android:textSize="25sp"/>
-    <Button
-        android:id="@+id/hundred"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="100"
-        android:layout_weight="1"
-        android:layout_margin="16dp"
-        android:onClick="selfDestruct2"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"/>
-    <Button
-        android:id="@+id/onefifty"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="150"
-        android:layout_weight="1"
-        android:layout_margin="16dp"
-        android:onClick="selfDestruct3"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"/>
-    <Button
-        android:id="@+id/twohundred"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="200"
-        android:layout_weight="1"
-        android:layout_margin="16dp"
-        android:onClick="selfDestruct4"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"/>
+
 
     <TextView
         android:layout_width="match_parent"
