@@ -8,37 +8,85 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:background="#EEEEEE"
     tools:context="com.redrawlife.epos.myapplication.MainActivity">
 
-    <TextView
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:text="Enter Amount in Rs"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        android:layout_margin="16dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="80dp"
-        android:layout_gravity="center_horizontal" />
 
     <Button
-        android:id="@+id/payment"
+        android:id="@+id/fifty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MAKE PAYMENT"
+        android:text="50"
+        android:layout_weight="1"
         android:layout_margin="16dp"
-        android:onClick="makepayment"
+        android:onClick="selfDestruct1"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/hundred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:onClick="selfDestruct2"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/onefifty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="150"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:onClick="selfDestruct3"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/twohundred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="200"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:onClick="selfDestruct4"
         android:textColor="#FFFFFF"
         android:textSize="25sp"/>
 
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+
+            android:id="@+id/editText"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:textAlignment="center"
+            android:layout_gravity="left" />
+    <Button
+        android:id="@+id/payment"
+        android:layout_toRightOf="@id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAY"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="makepayment"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
