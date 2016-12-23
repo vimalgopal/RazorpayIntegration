@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.redrawlife.epos.myapplication.MainActivity">
+
+
+    <Button
+        android:id="@+id/fifty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:onClick="selfDestruct1"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/hundred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:onClick="selfDestruct2"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/onefifty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="150"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:onClick="selfDestruct3"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/twohundred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="200"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:onClick="selfDestruct4"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powered by Razorpay"
+        android:textAlignment="center"
+        android:textSize="20sp"
+       />
+
+
+</LinearLayout>
